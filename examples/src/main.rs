@@ -1,4 +1,6 @@
 rouille::rouille! {
+    externe cagette rouille;
+
     utilisons std::collections::Dictionnaire comme Dico;
 
     interface CléValeur {
