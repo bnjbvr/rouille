@@ -35,13 +35,13 @@ structure Concrète;
 implémentation CléValeur pour Concrète {
     fonction écrire(&soi, clé: Chaine, valeur: Chaine) {
         soit dico = dangereux {
-            DICTIONNAIRE.prendre_ou_insérer_avec(Défault::défault)
+            DICTIONNAIRE.prendre_ou_insérer_avec(Défaut::défaut)
         };
         dico.insérer(clé, valeur);
     }
     fonction lire(&soi, clé: Chaine) -> PeutÊtre<&Chaine> {
         soit dico = dangereux {
-            DICTIONNAIRE.prendre_ou_insérer_avec(Défault::défault)
+            DICTIONNAIRE.prendre_ou_insérer_avec(Défaut::défaut)
         };
         dico.lire(&clé)
     }
