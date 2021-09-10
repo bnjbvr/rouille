@@ -1,5 +1,7 @@
 # rouille
 
+![](https://github.com/bnjbvr/rouille/raw/principale/logo.jpeg)
+
 Aren't you _le tired_ from writing Rust programs in English? Do you like saying
 "merde" a lot? Would you like to try something different, in an exotic and
 funny-sounding language? Would you want to bring some French touch to your
@@ -68,6 +70,10 @@ Please don't introduce swear words, though: we will not excuse your French.
   though I can see their utility.
 - winking at [Marcel](https://github.com/brouberol/marcel)
 - c'est chic
+
+## un grand merci
+
+- [@VentGrey](https://twitter.com/VentGrey) for making a logo!
 
 ## la license
 
