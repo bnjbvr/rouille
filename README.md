@@ -1,11 +1,11 @@
 # rouille
 
-Aren't you *le tired* from writing Rust programs in English? Do you like saying
+Aren't you _le tired_ from writing Rust programs in English? Do you like saying
 "merde" a lot? Would you like to try something different, in an exotic and
 funny-sounding language? Would you want to bring some French touch to your
 programs?
 
-**rouille** (French for *Rust*) is here to save your day, as it allows you to
+**rouille** (French for _Rust_) is here to save your day, as it allows you to
 write Rust programs in French, using French keywords, French function names,
 French idioms.
 
@@ -23,7 +23,7 @@ Here's an example of what can be achieved with Rouille:
 ```rust
 utilisons std::collections::Dictionnaire comme Dico;
 
-interface CléValeur {
+convention CléValeur {
     fonction écrire(&soi, clé: Chaine, valeur: Chaine);
     fonction lire(&soi, clé: Chaine) -> PeutÊtre<&Chaine>;
 }
@@ -32,7 +32,7 @@ statique mutable DICTIONNAIRE: PeutÊtre<Dico<Chaine, Chaine>> = Rien;
 
 structure Concrète;
 
-implémentation CléValeur pour Concrète {
+réalisation CléValeur pour Concrète {
     fonction écrire(&soi, clé: Chaine, valeur: Chaine) {
         soit dico = dangereux {
             DICTIONNAIRE.prendre_ou_insérer_avec(Défaut::défaut)
@@ -53,7 +53,7 @@ syntax. Voilà, that's it.
 
 ## les contributions
 
-First of all, *merci beaucoup* for considering participating to this joke, the
+First of all, _merci beaucoup_ for considering participating to this joke, the
 French government will thank you later! Feel free to throw in a few identifiers
 here and there, and open a pull-request against the `principale` (French for
 `main`) branch.

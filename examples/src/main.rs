@@ -3,7 +3,7 @@ rouille::rouille! {
 
     utilisons std::collections::Dictionnaire comme Dico;
 
-    interface CléValeur {
+    convention CléValeur {
         fonction écrire(&soi, clé: Chaine, valeur: Chaine);
         fonction lire(&soi, clé: Chaine) -> PeutÊtre<&Chaine>;
     }
@@ -12,7 +12,7 @@ rouille::rouille! {
 
     structure Concrète;
 
-    implémentation CléValeur pour Concrète {
+    réalisation CléValeur pour Concrète {
         fonction écrire(&soi, clé: Chaine, valeur: Chaine) {
             soit dico = dangereux {
                 DICTIONNAIRE.prendre_ou_insérer_avec(Défaut::défaut)
