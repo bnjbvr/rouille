@@ -60,12 +60,16 @@ rouille::rouille! {
             soit val = boucle {
                 arrête i;
             };
+
             tant que x < val {
                 x += 1;
             }
+
             x = si soit Quelque(resultat) = peut_etre(i) {
                 resultat.déballer()
-            } else { 12 };
+            } sinon {
+                12
+            };
         }
     }
 }
