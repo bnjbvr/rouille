@@ -4,9 +4,6 @@ fn replace_ident(ident: Ident) -> Option<TokenTree> {
     let ident_str = ident.to_string();
 
     let new_str = match ident_str.as_str() {
-        "vers" => "into",
-        "réf" => "ref",
-        "en_réf" => "as_ref",
         "Arf" => "Err",
         "Bien" => "Ok",
         "Chaine" => "String",
@@ -25,6 +22,7 @@ fn replace_ident(ident: Ident) -> Option<TokenTree> {
         "boucle" => "loop",
         "bouge" => "move",
         "cagette" => "crate",
+        "code_inaccessible" => "unreachable_code",
         "comme" => "as",
         "constant" => "const",
         "convention" => "trait",
@@ -34,6 +32,7 @@ fn replace_ident(ident: Ident) -> Option<TokenTree> {
         "dynamique" => "dyn",
         "déballer" => "unwrap",
         "défaut" => "default",
+        "en_réf" => "as_ref",
         "es" => "io",
         "externe" => "extern",
         "faux" => "false",
@@ -41,6 +40,7 @@ fn replace_ident(ident: Ident) -> Option<TokenTree> {
         "génial" => "super",
         "insérer" => "insert",
         "lire" => "get",
+        "légal" => "allow",
         "merde" | "calisse" | "oups" => "panic",
         "module" => "mod",
         "mutable" => "mut",
@@ -53,6 +53,7 @@ fn replace_ident(ident: Ident) -> Option<TokenTree> {
         "que" => None?,
         "renvoie" => "return",
         "réalisation" => "impl",
+        "réf" => "ref",
         "selon" => "match",
         "si" => "if",
         "sinon" => "else",
@@ -63,6 +64,7 @@ fn replace_ident(ident: Ident) -> Option<TokenTree> {
         "suppose" => "expect",
         "tant" => "while",
         "utilisons" => "use",
+        "vers" => "into",
         "vrai" => "true",
         "énumération" => "enum",
 

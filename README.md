@@ -22,6 +22,8 @@ convenience.
 
 Here's an example of what can be achieved with Rouille:
 
+### struct and impl (aka convention et réalisation)
+
 ```rust
 rouille::rouille! {
     utilisons std::collections::Dictionnaire comme Dico;
@@ -52,6 +54,19 @@ rouille::rouille! {
     }
 }
 ```
+
+### Support for regional languages
+
+```rust
+#[légal(code_inaccessible)]
+fonction secondaire() {
+    merde!("oh non"); // for the true French experience
+    calisse!("tabernacle"); // for friends speaking fr-ca
+    oups!("fetchez la vache"); // in SFW contexts
+}
+```
+
+### Other examples
 
 See the [examples](./examples/src/main.rs) to get a rough sense of the whole
 syntax. Voilà, that's it.
