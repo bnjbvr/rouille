@@ -5,7 +5,7 @@ rouille::rouille! {
 
     convention CléValeur {
         fonction écrire(&soi, clé: Chaine, valeur: Chaine);
-        fonction lire(&soi, clé: Chaine) -> PeutÊtre<&Chaine>;
+        fonction lire(&soi, clé: Chaine) -> Résultat<PeutÊtre<&Chaine>, Chaine>;
     }
 
     statique mutable DICTIONNAIRE: PeutÊtre<Dico<Chaine, Chaine>> = Rien;
@@ -19,11 +19,12 @@ rouille::rouille! {
             };
             dico.insérer(clé, valeur);
         }
-        fonction lire(&soi, clé: Chaine) -> PeutÊtre<&Chaine> {
-            soit dico = dangereux {
-                DICTIONNAIRE.prendre_ou_insérer_avec(Défaut::défaut)
-            };
-            dico.lire(&clé)
+        fonction lire(&soi, clé: Chaine) -> Résultat<PeutÊtre<&Chaine>, Chaine> {
+            si soit Quelque(dico) = dangereux { DICTIONNAIRE.en_réf() } {
+                Bien(dico.lire(&clé))
+            } sinon {
+                Arf("fetchez le dico".vers())
+            }
         }
     }
 
@@ -49,7 +50,7 @@ rouille::rouille! {
     fonction principale() {
         soit mutable x = 31;
 
-        correspond x {
+        selon x {
             42 => {
                 affiche!("omelette du fromage")
             }

@@ -23,29 +23,32 @@ convenience.
 Here's an example of what can be achieved with Rouille:
 
 ```rust
-utilisons std::collections::Dictionnaire comme Dico;
+rouille::rouille! {
+    utilisons std::collections::Dictionnaire comme Dico;
 
-convention CléValeur {
-    fonction écrire(&soi, clé: Chaine, valeur: Chaine);
-    fonction lire(&soi, clé: Chaine) -> PeutÊtre<&Chaine>;
-}
-
-statique mutable DICTIONNAIRE: PeutÊtre<Dico<Chaine, Chaine>> = Rien;
-
-structure Concrète;
-
-réalisation CléValeur pour Concrète {
-    fonction écrire(&soi, clé: Chaine, valeur: Chaine) {
-        soit dico = dangereux {
-            DICTIONNAIRE.prendre_ou_insérer_avec(Défaut::défaut)
-        };
-        dico.insérer(clé, valeur);
+    convention CléValeur {
+        fonction écrire(&soi, clé: Chaine, valeur: Chaine);
+        fonction lire(&soi, clé: Chaine) -> PeutÊtre<&Chaine>;
     }
-    fonction lire(&soi, clé: Chaine) -> PeutÊtre<&Chaine> {
-        soit dico = dangereux {
-            DICTIONNAIRE.prendre_ou_insérer_avec(Défaut::défaut)
-        };
-        dico.lire(&clé)
+
+    statique mutable DICTIONNAIRE: PeutÊtre<Dico<Chaine, Chaine>> = Rien;
+
+    structure Concrète;
+
+    réalisation CléValeur pour Concrète {
+        fonction écrire(&soi, clé: Chaine, valeur: Chaine) {
+            soit dico = dangereux {
+                DICTIONNAIRE.prendre_ou_insérer_avec(Défaut::défaut)
+            };
+            dico.insérer(clé, valeur);
+        }
+        fonction lire(&soi, clé: Chaine) -> Résultat<PeutÊtre<&Chaine>, Chaine> {
+            si soit Quelque(dico) = dangereux { DICTIONNAIRE.en_réf() } {
+                Bien(dico.lire(&clé))
+            } sinon {
+                Arf("fetchez le dico".vers())
+            }
+        }
     }
 }
 ```
