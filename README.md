@@ -61,7 +61,7 @@ rouille::rouille! {
 #[légal(code_inaccessible)]
 fonction secondaire() {
     merde!("oh non"); // for the true French experience
-    calisse!("tabernacle"); // for friends speaking fr-ca
+    calisse!("tabarnak"); // for friends speaking fr-ca
     oups!("fetchez la vache"); // in SFW contexts
 }
 ```
