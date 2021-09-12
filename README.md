@@ -22,7 +22,7 @@ convenience.
 
 Here's an example of what can be achieved with Rouille:
 
-### struct and impl (aka convention et réalisation)
+### trait and impl (aka convention et réalisation)
 
 ```rust
 rouille::rouille! {
