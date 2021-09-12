@@ -89,6 +89,11 @@ Please don't introduce swear words, though: we will not excuse your French.
 - winking at [Marcel](https://github.com/brouberol/marcel)
 - c'est chic
 
+## Other languages
+
+- Dutch: [roest](https://github.com/jeroenhd/roest)
+- German: [rost](https://github.com/michidk/rost)
+
 ## un grand merci
 
 - [@VentGrey](https://twitter.com/VentGrey) for making a logo!
