@@ -106,4 +106,6 @@ Please don't introduce swear words, though: we will not excuse your French.
 
 ## la license
 
-[WTFPL](http://www.wtfpl.net/).
+[License Publique Rien à Branler](http://sam.zoy.org/lprab/),
+_le_ official translation of the [WTFPL](http://www.wtfpl.net/)
+by the same author.
