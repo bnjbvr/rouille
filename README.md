@@ -94,6 +94,7 @@ Please don't introduce swear words, though: we will not excuse your French.
 - Dutch: [roest](https://github.com/jeroenhd/roest)
 - German: [rost](https://github.com/michidk/rost)
 - Polish: [rdza](https://github.com/phaux/rdza)
+- Italian: [ruggine](https://github.com/DamianX/ruggine)
 
 ## un grand merci
 
