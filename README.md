@@ -96,6 +96,7 @@ Please don't introduce swear words, though: we will not excuse your French.
 - Polish: [rdza](https://github.com/phaux/rdza)
 - Italian: [ruggine](https://github.com/DamianX/ruggine)
 - Esperanto: [rustteksto](https://github.com/dscottboggs/rustteksto)
+- Hindi: [zung](https://github.com/rishit-khandelwal/zung)
 
 ## un grand merci
 
