@@ -98,6 +98,7 @@ Please don't introduce swear words, though: we will not excuse your French.
 - Russian: [ржавчина](https://github.com/FluxIndustries/rzhavchina)
 - Esperanto: [rustteksto](https://github.com/dscottboggs/rustteksto)
 - Hindi: [zung](https://github.com/rishit-khandelwal/zung)
+- Hungarian: [rozsda](https://github.com/jozsefsallai/rozsda)
 
 ## un grand merci
 
