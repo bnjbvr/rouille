@@ -99,6 +99,7 @@ Please don't introduce swear words, though: we will not excuse your French.
 - Esperanto: [rustteksto](https://github.com/dscottboggs/rustteksto)
 - Hindi: [zung](https://github.com/rishit-khandelwal/zung)
 - Hungarian: [rozsda](https://github.com/jozsefsallai/rozsda)
+- Chinese: [xiu (锈)](https://github.com/lucifer1004/xiu)
 
 ## un grand merci
 
