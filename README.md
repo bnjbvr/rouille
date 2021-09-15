@@ -101,6 +101,8 @@ Please don't introduce swear words, though: we will not excuse your French.
 - Hungarian: [rozsda](https://github.com/jozsefsallai/rozsda)
 - Chinese: [xiu (锈)](https://github.com/lucifer1004/xiu)
 - Spanish: [oxido](https://github.com/fdschonborn/oxido)
+- Korean: [Nok (녹)](https://github.com/Alfex4936/nok)
+- Finnish: [ruoste](https://github.com/vkoskiv/ruoste)
 
 ## un grand merci
 
