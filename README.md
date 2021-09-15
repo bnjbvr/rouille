@@ -101,6 +101,7 @@ Please don't introduce swear words, though: we will not excuse your French.
 - Hungarian: [rozsda](https://github.com/jozsefsallai/rozsda)
 - Chinese: [xiu (锈)](https://github.com/lucifer1004/xiu)
 - Finnish: [ruoste](https://github.com/vkoskiv/ruoste)
+- - Arabic: [sada](https://github.com/LAYGATOR/sada)
 
 ## un grand merci
 
