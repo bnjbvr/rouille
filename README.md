@@ -100,6 +100,7 @@ Please don't introduce swear words, though: we will not excuse your French.
 - Hindi: [zung](https://github.com/rishit-khandelwal/zung)
 - Hungarian: [rozsda](https://github.com/jozsefsallai/rozsda)
 - Chinese: [xiu (锈)](https://github.com/lucifer1004/xiu)
+- Spanish: [oxido](https://github.com/fdschonborn/oxido)
 
 ## un grand merci
 
