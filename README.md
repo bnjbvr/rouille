@@ -105,6 +105,7 @@ Please don't introduce swear words, though: we will not excuse your French.
 - Finnish: [ruoste](https://github.com/vkoskiv/ruoste)
 - Arabic: [sada](https://github.com/LAYGATOR/sada)
 - Turkish: [pas](https://github.com/ekimb/pas)
+- Vietnamese: [gỉ](https://github.com/Huy-Ngo/gir)
 
 ## un grand merci
 
