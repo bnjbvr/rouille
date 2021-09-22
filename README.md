@@ -106,6 +106,7 @@ Please don't introduce swear words, though: we will not excuse your French.
 - Arabic: [sada](https://github.com/LAYGATOR/sada)
 - Turkish: [pas](https://github.com/ekimb/pas)
 - Vietnamese: [gỉ](https://github.com/Huy-Ngo/gir)
+- Japanese: [sabi (錆)](https://github.com/yuk1ty/sabi)
 
 ## un grand merci
 
