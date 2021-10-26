@@ -1,4 +1,4 @@
-name: Rust
+name: Rouille
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [ principale ]
 
 jobs:
-  ci:
+  ic:
     env:
         RUST_BACKTRACE: 1
     runs-on: ubuntu-latest
