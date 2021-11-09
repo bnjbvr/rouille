@@ -2,8 +2,8 @@
 
 ![](https://github.com/bnjbvr/rouille/raw/principale/logo.jpeg)
 
-Aren't you _le tired_ from writing Rust programs in English? Do you like saying
-"merde" a lot? Would you like to try something different, in an exotic and
+Aren't you _fatigué_ from writing Rust programs in English? Do you like saying
+"Merde" or "Tabarnak" a lot? Would you like to try something different, in an exotic and
 funny-sounding language? Would you want to bring some French touch to your
 programs?
 
@@ -69,7 +69,7 @@ fonction secondaire() {
 ### Other examples
 
 See the [examples](./examples/src/main.rs) to get a rough sense of the whole
-syntax. Voilà, that's it.
+syntax. Voilà, C'est tout.
 
 ## les contributions
 
