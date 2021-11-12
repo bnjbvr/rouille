@@ -109,6 +109,8 @@ Please don't introduce swear words, though: we will not excuse your French.
 - Japanese: [sabi (錆)](https://github.com/yuk1ty/sabi)
 - Danish: [rust?](https://github.com/LunaTheFoxgirl/rust-dk)
 - Marathi: [gan̄ja](https://github.com/pranavgade20/ganja)
+- Romanian: [rugină](https://github.com/aionescu/rugina)
+- Czech: [rez](https://github.com/radekvit/rez)
 
 ## un grand merci
 
