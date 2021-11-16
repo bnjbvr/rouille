@@ -112,6 +112,7 @@ Please don't introduce swear words, though: we will not excuse your French.
 - Romanian: [rugină](https://github.com/aionescu/rugina)
 - Czech: [rez](https://github.com/radekvit/rez)
 - Ukrainian: [irzha](https://github.com/brokeyourbike/irzha)
+- Bulgarian: [ryzhda](https://github.com/gavadinov/ryzhda)
 
 ## un grand merci
 
