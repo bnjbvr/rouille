@@ -1,8 +1,8 @@
 # Hrdza
 
 Aren't you _totál unavený_ from writing Rust programs in English? Do you like saying
-"kokot" a lot? Would you like to try something different, in an exotic and
-funny-sounding language? Would you want to bring some Slovak touch to your
+"kokot" a lot? Would you like to try something different, in an exotic yet familiar language? 
+Would you want to bring some Slovak touch to your
 programs?
 
 **hrdza** (Slovak for _Rust_) is here to save your day, as it allows you to
