@@ -5,7 +5,7 @@ hrdza::hrdza! {
 
     vlastnost KlucHodnota {
         funkcia pis(&ja, kluc: Retaz, hodnota: Retaz);
-        funckia citaj(&ja, kluc: Retaz) -> Vysledok<Moznost<&Retaz>, Retaz>;
+        funkcia citaj(&ja, kluc: Retaz) -> Vysledok<Moznost<&Retaz>, Retaz>;
     }
 
     pevny menny SLOVNIK: Moznost<Slk<Retaz, Retaz>> = Ziaden;
