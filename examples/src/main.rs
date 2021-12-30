@@ -1,5 +1,5 @@
 hrdza::hrdza! {
-    extern prepravka hrdza;
+    vonkajsy prepravka hrdza;
 
     pouzi std::collections::Slovnik ako Slk;
 
