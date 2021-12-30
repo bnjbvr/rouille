@@ -1,85 +1,76 @@
-rouille::rouille! {
-    externe cagette rouille;
+hrdza::hrdza! {
+    extern prepravka hrdza;
 
-    utilisons std::collections::Dictionnaire comme Dico;
+    pouzi std::collections::Slovnik ako Slk;
 
-    convention CléValeur {
-        fonction écrire(&soi, clé: Chaine, valeur: Chaine);
-        fonction lire(&soi, clé: Chaine) -> Résultat<PeutÊtre<&Chaine>, Chaine>;
+    vlastnost KlucHodnota {
+        funkcia pis(&ja, kluc: Retaz, hodnota: Retaz);
+        funckia citaj(&ja, kluc: Retaz) -> Vysledok<Moznost<&Retaz>, Retaz>;
     }
 
-    statique mutable DICTIONNAIRE: PeutÊtre<Dico<Chaine, Chaine>> = Rien;
+    pevny menny SLOVNIK: Moznost<Slk<Retaz, Retaz>> = Ziaden;
 
-    structure Concrète;
+    struktura Konkretny;
 
-    réalisation CléValeur pour Concrète {
-        fonction écrire(&soi, clé: Chaine, valeur: Chaine) {
-            soit dico = dangereux {
-                DICTIONNAIRE.prendre_ou_insérer_avec(Défaut::défaut)
+    realizacia KlucHodnota pre Konkretny {
+        funkcia pis(&ja, kluc: Retaz, hodnota: Retaz) {
+            nech slvk = nebezpecny {
+                SLOVNIK.daj_alebo_vloz_s(Zaklad::zaklad)
             };
-            dico.insérer(clé, valeur);
+            slvk.vloz(kluc, hodnota);
         }
-        fonction lire(&soi, clé: Chaine) -> Résultat<PeutÊtre<&Chaine>, Chaine> {
-            si soit Quelque(dico) = dangereux { DICTIONNAIRE.en_réf() } {
-                Bien(dico.lire(&clé))
-            } sinon {
-                Arf("fetchez le dico".vers())
+        funkcia citaj(&ja, kluc: Retaz) -> Vysledok<Moznost<&Retaz>, Retaz> {
+            ak nech Nejaky(slvk) = nebezpecny { SLOVNIK.ako_odkaz() } {
+                Dobre(slvk.dostan(&kluc))
+            } inak {
+                Chyba("ziskat zo slovnika".do())
             }
         }
     }
 
-    public(cagette) fonction peut_etre(i: u32) -> PeutÊtre<Résultat<u32, Chaine>> {
-        si i % 2 == 1 {
-            si i == 42 {
-                Quelque(Arf(Chaine::depuis("merde")))
-            } sinon {
-                Quelque(Bien(33))
+    verejny(prepravka) funkcia mozno(i: u32) -> Moznost<Vysledok<u32, Retaz>> {
+        ak i % 2 == 1 {
+            ak i == 42 {
+                Nejaky(Chyba(Retaz::od("blaze it")))
+            } inak {
+                Nejaky(Dobre(33))
             }
-        } sinon {
-            Rien
+        } inak {
+            Ziaden
         }
     }
 
-    asynchrone fonction exemple() {
+    zaroven funkcia priklad() {
     }
 
-    asynchrone fonction exemple2() {
-        exemple().attend;
+    zaroven funkcia priklad2() {
+        priklad().pockaj;
     }
 
-    fonction principale() {
-        soit mutable x = 31;
+    funkcia hlavny() {
+        nech menny x = 31;
 
-        selon x {
+        podobny x {
             42 => {
-                affiche!("omelette du fromage")
+                vytlac_rdk!("chobotnica")
             }
-            _ => affiche!("voila")
+            _ => vytlac_rdk!("oktopus")
         }
 
-        pour i de 0..10 {
-            soit val = boucle {
-                arrête i;
+        pre i dnu 0..10 {
+            nech val = cyklus {
+                prelom i;
             };
 
-            tant que x < val {
+            dokym x < val {
                 x += 1;
             }
 
-            x = si soit Quelque(resultat) = peut_etre(i) {
-                resultat.déballer()
-            } sinon {
+            x = ak nech Nejaky(vysledok) = mozno(i) {
+                vysledok.rozbal()
+            } inak {
                 12
             };
         }
-
-        //secondaire();
-    }
-
-    #[légal(code_inaccessible)]
-    fonction secondaire() {
-        merde!("oh non"); // for the true French experience
-        calisse!("tabernacle"); // for friends speaking fr-ca
-        oups!("fetchez la vache"); // in SFW contexts
     }
 }

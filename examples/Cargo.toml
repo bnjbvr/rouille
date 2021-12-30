@@ -1,9 +1,9 @@
 [package]
-name = "rouille_examples"
+name = "hrdza_examples"
 version = "0.1.0"
-edition = "2018"
+edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-rouille = { path = "../rouille_proc_macro/" }
+hrdza = { path = "../hrdza_proc_macro/" }
