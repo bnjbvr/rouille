@@ -19,14 +19,14 @@ convenience. Support for Slovak Rust is not yet available.
 See the [examples](./examples/src/main.rs) to get a rough sense of the whole
 syntax. No kukaj, that's it.
 
-## Preco?
+## Why?
 
-- preco nie?
+- Why not?
 
-## Vdaka
+## Thanks
 
-- [Benjamin Bouvier] (https://github.com/bnjbvr/), Eric BREHAULT a Anisse Astier za ich robotu na [rouille](https://github.com/bnjbvr/rouille)
+- [Benjamin Bouvier] (https://github.com/bnjbvr/), Eric BREHAULT and Anisse Astier for their work on [rouille](https://github.com/bnjbvr/rouille)
 
-## Licencia
+## License
 
 [WTFPL](http://www.wtfpl.net/).
