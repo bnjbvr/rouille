@@ -113,6 +113,7 @@ Please don't introduce swear words, though: we will not excuse your French.
 - Czech: [rez](https://github.com/radekvit/rez)
 - Ukrainian: [irzha](https://github.com/brokeyourbike/irzha)
 - Bulgarian: [ryzhda](https://github.com/gavadinov/ryzhda)
+- Slovak: [hrdza](https://github.com/TheMessik/hrdza)
 
 ## un grand merci
 
