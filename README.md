@@ -114,6 +114,7 @@ Please don't introduce swear words, though: we will not excuse your French.
 - Ukrainian: [irzha](https://github.com/brokeyourbike/irzha)
 - Bulgarian: [ryzhda](https://github.com/gavadinov/ryzhda)
 - Slovak: [hrdza](https://github.com/TheMessik/hrdza)
+- Catalan: [rovell](https://github.com/gborobio73/rovell)
 
 ## un grand merci
 
