@@ -115,7 +115,7 @@ Please don't introduce swear words, though: we will not excuse your French.
 - Bulgarian: [ryzhda](https://github.com/gavadinov/ryzhda)
 - Slovak: [hrdza](https://github.com/TheMessik/hrdza)
 - Catalan: [rovell](https://github.com/gborobio73/rovell)
-- Catalan: [rughjina](https://github.com/aldebaranzbradaradjan/rughjina)
+- Corsican: [rughjina](https://github.com/aldebaranzbradaradjan/rughjina)
 
 ## un grand merci
 
