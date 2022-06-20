@@ -12,11 +12,15 @@ write Rust programs in French, using French keywords, French function names,
 French idioms.
 
 This has been designed to be used as the official programming language to
-develop the future French sovereign operating system. If you're from the French
-government: I will be awaiting your donations on
+develop the future French sovereign operating system. 
+
+If you're from the French or any other governement with French as an official 
+language: I will be awaiting your donations on
 [liberapay](https://liberapay.com/bnjbvr/).
 
-You're from Quebec and don't feel at ease using only French words? Don't worry!
+You're from Quebec (or elsewhere) and don't feel at ease using only French words? 
+
+Don't worry!
 French Rust is fully compatible with English-Rust, so you can mix both at your
 convenience.
 
