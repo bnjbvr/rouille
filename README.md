@@ -120,6 +120,7 @@ Please don't introduce swear words, though: we will not excuse your French.
 - Slovak: [hrdza](https://github.com/TheMessik/hrdza)
 - Catalan: [rovell](https://github.com/gborobio73/rovell)
 - Corsican: [rughjina](https://github.com/aldebaranzbradaradjan/rughjina)
+- Indonesian: [karat](https://github.com/annurdien/karat)
 
 ## un grand merci
 
