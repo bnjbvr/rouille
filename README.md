@@ -122,6 +122,7 @@ Please don't introduce swear words, though: we will not excuse your French.
 - Corsican: [rughjina](https://github.com/aldebaranzbradaradjan/rughjina)
 - Indonesian: [karat](https://github.com/annurdien/karat)
 - Lithuanian: [rūdys](https://github.com/TruncatedDinosour/rudys)
+- Greek: [skouriasmeno](https://github.com/devlocalhost/skouriasmeno)
 
 ## un grand merci
 
