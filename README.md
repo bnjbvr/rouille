@@ -125,6 +125,7 @@ Please don't introduce swear words, though: we will not excuse your French.
 - Greek: [skouriasmeno](https://github.com/devlocalhost/skouriasmeno)
 - Thai: [sanim (สนิม)](https://github.com/korewaChino/sanim)
 - Swiss: [roeschti](https://github.com/Georg-code/roeschti)
+- Swedish: [rost](https://github.com/vojd/rost/)
 
 ## un grand merci
 
