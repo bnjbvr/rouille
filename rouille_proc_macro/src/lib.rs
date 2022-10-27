@@ -51,7 +51,7 @@ rouille_compilogenese::rouille! {
             "prendre_ou_insérer_avec" => "get_or_insert_with",
             "principale" => "main",
             "public" => "pub",
-            "que" => None?,
+            "que" => Rien?,
             "renvoie" => "return",
             "réalisation" => "impl",
             "réf" => "ref",
