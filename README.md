@@ -127,6 +127,7 @@ Please don't introduce swear words, though: we will not excuse your French.
 - Swiss: [roeschti](https://github.com/Georg-code/roeschti)
 - Swedish: [rost](https://github.com/vojd/rost/)
 - Croatian: [hrđa](https://github.com/njelich/hrdja)
+- All of the above: [unirust](https://github.com/charyan/unirust)
 
 ## un grand merci
 
