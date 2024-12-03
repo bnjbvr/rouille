@@ -1,85 +1,88 @@
-rouille::rouille! {
-    externe cagette rouille;
+ferrugo::ferrugo! {
+    uti std::thesaurus::glossarium cum Glos;
 
-    utilisons std::collections::Dictionnaire comme Dico;
-
-    convention CléValeur {
-        fonction écrire(&soi, clé: Chaîne, valeur: Chaîne);
-        fonction lire(&soi, clé: Chaîne) -> Résultat<PeutÊtre<&Chaîne>, Chaîne>;
+    proprietas Res {
+        functionaliter scribe(&ipse, clavis: filum, pretium: filum);
+        functionaliter lege(&ipse, clavis: filum) -> eventum<facultas<&filum>, filum>;
     }
 
-    statique mutable DICTIONNAIRE: PeutÊtre<Dico<Chaîne, Chaîne>> = Rien;
+    staticus mut GLOSSARIUM: facultas<Glos<filum, filum>> = nihil;
 
-    structure Concrète;
+    structura Rectus;
 
-    réalisation CléValeur pour Concrète {
-        fonction écrire(&soi, clé: Chaîne, valeur: Chaîne) {
-            soit dico = dangereux {
-                DICTIONNAIRE.prendre_ou_insérer_avec(Défaut::défaut)
+    impl Res pro Rectus {
+
+        functionaliter scribe(&ipse, clavis: filum, pretium: filum) {
+            sinere glos = periculosus {
+                GLOSSARIUM.adepto_vel_adde_cum(criterium::adsuetus)
             };
-            dico.insérer(clé, valeur);
+            glos.inserere(clavis, pretium);
         }
-        fonction lire(&soi, clé: Chaîne) -> Résultat<PeutÊtre<&Chaîne>, Chaîne> {
-            si soit Quelque(dico) = dangereux { DICTIONNAIRE.en_réf() } {
-                Bien(dico.lire(&clé))
-            } sinon {
-                Arf("fetchez le dico".vers())
+
+        functionaliter lege(&ipse, clavis: filum) -> eventum<facultas<&filum>, filum> {
+            si sinere quicquam(glos) = periculosus { GLOSSARIUM.quam_incidens() } {
+                bene(glos.accere(&clavis))
+            } alioquin {
+                vitium("arcessite glossarium!".intro())
             }
         }
     }
 
-    public(cagette) fonction peut_etre(i: u32) -> PeutÊtre<Résultat<u32, Chaîne>> {
+    civilis(cista) functionaliter fortasse(i: u32) -> facultas<eventum<u32, filum>> {
         si i % 2 == 1 {
             si i == 42 {
-                Quelque(Arf(Chaîne::depuis("merde")))
-            } sinon {
-                Quelque(Bien(33))
+                quicquam(vitium(filum::ex("trepidatio")))
+            } alioquin {
+                quicquam(bene(33))
             }
-        } sinon {
-            Rien
+        } alioquin {
+            nihil
         }
     }
 
-    asynchrone fonction exemple() {
+    iuxta_ire functionaliter exemplum() {
     }
 
-    asynchrone fonction exemple2() {
-        exemple().attend;
+    iuxta_ire functionaliter exemplum2() {
+        exemplum().exspectare;
     }
 
-    fonction principale() {
-        soit mutable x = 31;
+    functionaliter initium() {
+        sinere mut x = 31;
 
-        selon x {
+        ammodulari x {
             42 => {
-                affiche!("omelette du fromage")
+                erogatio!("Jupiter!")
             }
-            _ => affiche!("voila")
+            _ => erogatio!("functionaliter!")
         }
 
-        pour i de 0..10 {
-            soit val = boucle {
-                arrête i;
+        pro i in 0..10 {
+            sinere val = cyclus {
+                inerruptio i;
             };
 
-            tant que x < val {
+            dum nullus x < val {
                 x += 1;
             }
 
-            x = si soit Quelque(resultat) = peut_etre(i) {
-                resultat.déballer()
-            } sinon {
+            x = si sinere quicquam(eventum) = fortasse(i) {
+                eventum.vacuefacere()
+            } alioquin {
                 12
             };
         }
 
-        //secondaire();
-    }
-
-    #[légal(code_inaccessible)]
-    fonction secondaire() {
-        merde!("oh non"); // for the true French experience
-        calisse!("tabernacle"); // for friends speaking fr-ca
-        oups!("fetchez la vache"); // in SFW contexts
+        uti std::clo::Ordo;
+        sinere horreum = vec![0; 100].rursum()
+            .capere(50)
+            .comparturire(|numerus| numerus %  7)
+            .colligere::<Vec<i32>>()
+            .ad_rursum()
+            .plicare(0, |a, numerus| ammodulari numerus.clo(&a) {
+                Ordo::plus => a - numerus,
+                Ordo::minus => a + numerus,
+                Ordo::parilis => a,
+            });
     }
 }

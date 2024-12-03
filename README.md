@@ -1,100 +1,67 @@
-# rouille
+# ferrugo
 
-![](https://github.com/bnjbvr/rouille/raw/principale/logo.jpeg)
+<p align="center"><img src="logo.jpg" alt="Rust Latin Logo"></p>
 
-Aren't you _le tired_ from writing Rust programs in English? Do you like saying
-"merde" a lot? Would you like to try something different, in an exotic and
-funny-sounding language? Would you want to bring some French touch to your
+Aren't you _defessus_ from writing Rust programs in English? Do you like saying
+"Lorem ipsum" a lot? Would you like to try something different, in an exotic and
+funny-sounding language? Would you want to bring some Latin touch to your
 programs?
 
-**rouille** (French for _Rust_) is here to save your day, as it allows you to
-write Rust programs in French, using French keywords, French function names,
-French idioms.
+**ferrugo** (Latin for _Rust_) is here to save your day, as it allows you to
+write Rust programs in Latin, using Latin keywords, Latin function names,
+Latin idioms.
 
-This has been designed to be used as the official programming language to
-develop the future French sovereign operating system. 
-
-If you're from the French or any other governement with French as an official 
-language: I will be awaiting your donations on
-[liberapay](https://liberapay.com/bnjbvr/).
-
-You're from Quebec (or elsewhere) and don't feel at ease using only French words? 
-
-Don't worry!
-French Rust is fully compatible with English-Rust, so you can mix both at your
+You don't feel at ease using only Latin words? Don't worry!
+Latin Rust is fully compatible with English-Rust, so you can mix both at your
 convenience.
 
-Here's an example of what can be achieved with Rouille:
+Here's an example of what can be achieved with ferrugo:
 
-### trait and impl (aka convention et réalisation)
+## struct and impl (aka _lex et transplantatis_)
 
 ```rust
-rouille::rouille! {
-    utilisons std::collections::Dictionnaire comme Dico;
+ferrugo::ferrugo! {
+    uti std::thesaurus::glossarium cum Glos;
 
-    convention CléValeur {
-        fonction écrire(&soi, clé: Chaîne, valeur: Chaîne);
-        fonction lire(&soi, clé: Chaîne) -> PeutÊtre<&Chaîne>;
+    proprietas Res {
+        functionaliter scribe(&ipse, clavis: filum, wert: filum);
+        functionaliter lege(&ipse, clavis: filum) -> eventum<facultas<&filum>, filum>;
     }
 
-    statique mutable DICTIONNAIRE: PeutÊtre<Dico<Chaîne, Chaîne>> = Rien;
+    staticus mut GLOSSARIUM: facultas<Glos<filum, filum>> = nihil;
 
-    structure Concrète;
+    structura Rectus;
 
-    réalisation CléValeur pour Concrète {
-        fonction écrire(&soi, clé: Chaîne, valeur: Chaîne) {
-            soit dico = dangereux {
-                DICTIONNAIRE.prendre_ou_insérer_avec(Défaut::défaut)
+    impl Res pro Rectus {
+
+        functionaliter scribe(&ipse, clavis: filum, pretium: filum) {
+            sinere glos = periculosus {
+                GLOSSARIUM.adepto_vel_adde_cum(criterium::adsuetus)
             };
-            dico.insérer(clé, valeur);
+            glos.inserere(clavis, pretium);
         }
-        fonction lire(&soi, clé: Chaîne) -> Résultat<PeutÊtre<&Chaîne>, Chaîne> {
-            si soit Quelque(dico) = dangereux { DICTIONNAIRE.en_réf() } {
-                Bien(dico.lire(&clé))
-            } sinon {
-                Arf("fetchez le dico".vers())
+
+        functionaliter lege(&ipse, clavis: filum) -> eventum<facultas<&filum>, filum> {
+            si sinere quicquam(glos) = periculosus { GLOSSARIUM.quam_incidens() } {
+                bene(glos.accere(&clavis))
+            } alioquin {
+                vitium("arcessite glossarium!".intro())
             }
         }
     }
 }
 ```
 
-### Support for regional languages
-
-```rust
-#[légal(code_inaccessible)]
-fonction secondaire() {
-    merde!("oh non"); // for the true French experience
-    calisse!("tabarnak"); // for friends speaking fr-ca
-    oups!("fetchez la vache"); // in SFW contexts
-}
-```
-
-### Other examples
+## Other examples
 
 See the [examples](./examples/src/main.rs) to get a rough sense of the whole
-syntax. Voilà, that's it.
+syntax. Bene!
 
-## les contributions
+## but why would you do id?
 
-First of all, _merci beaucoup_ for considering participating to this joke, the
-French government will thank you later! Feel free to throw in a few identifiers
-here and there, and open a pull-request against the `principale` (French for
-`main`) branch.
+* they below can do it, so we can as well!
 
-Please don't introduce swear words, though: we will not excuse your French.
-
-## but why would you do zat
-
-- horsin around
-- playing with raw proc macros
-- making a bit of fun about programming languages that do this seriously,
-  though I can see their utility.
-- winking at [Marcel](https://github.com/brouberol/marcel)
-- c'est chic
-
-## Other languages
-
+- French: [rouille ](https://github.com/bnjbvr/rouille)
 - Dutch: [roest](https://github.com/jeroenhd/roest)
 - German: [rost](https://github.com/michidk/rost)
 - Polish: [rdza](https://github.com/phaux/rdza)
@@ -131,12 +98,12 @@ Please don't introduce swear words, though: we will not excuse your French.
 - Malagasy: [arafesina](https://github.com/luckasRanarison/arafesina)
 - All of the above: [unirust](https://github.com/charyan/unirust)
 
-## un grand merci
+## Cooperare
 
-- [@VentGrey](https://twitter.com/VentGrey) for making a logo!
+Feel free to throw in a few identifiers
+here and there, and open a pull-request against the `authenta` (Latin for
+`main`). The initial translation was made by [pianoman911](https://github.com/pianoman911/).
 
-## la license
+## Fructus lex
 
-[License Publique Rien à Branler](http://sam.zoy.org/lprab/),
-_le_ official translation of the [WTFPL](http://www.wtfpl.net/)
-by the same author.
+[WTFPL](http://www.wtfpl.net/), see [LICENTIA](./LICENTIA) as translated version.
