@@ -130,6 +130,7 @@ Please don't introduce swear words, though: we will not excuse your French.
 - Persian: [zangar (زنگار)](https://github.com/ui-ce/zangar)
 - Malagasy: [arafesina](https://github.com/luckasRanarison/arafesina)
 - Latin: [ferrugo](https://github.com/pianoman911/ferrugo)
+- Norwegian: [korrosjon](https://github.com/datagutt/korrosjon)
 - All of the above: [unirust](https://github.com/charyan/unirust)
 
 ## un grand merci
