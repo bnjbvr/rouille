@@ -1,85 +1,87 @@
-rouille::rouille! {
-    externe cagette rouille;
+use ferrugem::ferrugem;
 
-    utilisons std::collections::Dictionnaire comme Dico;
+ferrugem! {
+    externo caixa ferrugem;
+    use std::collections::Dicionario como Dic;
 
-    convention CléValeur {
-        fonction écrire(&soi, clé: Chaîne, valeur: Chaîne);
-        fonction lire(&soi, clé: Chaîne) -> Résultat<PeutÊtre<&Chaîne>, Chaîne>;
+    característica ChaveValor {
+        função escrever(&próprio, chave: Texto, valor: Texto);
+        função obter(&próprio, chave: Texto) -> Resultado<Talvez<&Texto>, Texto>;
     }
 
-    statique mutable DICTIONNAIRE: PeutÊtre<Dico<Chaîne, Chaîne>> = Rien;
+    estático mutável DICIONARIO: Talvez<Dic<Texto, Texto>> = Nenhum;
 
-    structure Concrète;
+    estrutura Concreta;
 
-    réalisation CléValeur pour Concrète {
-        fonction écrire(&soi, clé: Chaîne, valeur: Chaîne) {
-            soit dico = dangereux {
-                DICTIONNAIRE.prendre_ou_insérer_avec(Défaut::défaut)
+    implementação ChaveValor para Concreta {
+        função escrever(&próprio, chave: Texto, valor: Texto) {
+            seja dic = inseguro {
+                DICIONARIO.obter_ou_inserir_com(Padrão::padrão)
             };
-            dico.insérer(clé, valeur);
+
+            dic.inserir(chave, valor);
         }
-        fonction lire(&soi, clé: Chaîne) -> Résultat<PeutÊtre<&Chaîne>, Chaîne> {
-            si soit Quelque(dico) = dangereux { DICTIONNAIRE.en_réf() } {
-                Bien(dico.lire(&clé))
-            } sinon {
-                Arf("fetchez le dico".vers())
+
+        função obter(&próprio, chave: Texto) -> Resultado<Talvez<&Texto>, Texto> {
+            se seja Algum(dic) = inseguro { DICIONARIO.como_ref() } {
+                Ok(dic.obter(&chave))
+            } senão {
+                Falha("busque o dicionário".converter())
             }
         }
     }
 
-    public(cagette) fonction peut_etre(i: u32) -> PeutÊtre<Résultat<u32, Chaîne>> {
-        si i % 2 == 1 {
-            si i == 42 {
-                Quelque(Arf(Chaîne::depuis("merde")))
-            } sinon {
-                Quelque(Bien(33))
+    público(caixa) função pode_ser(i: u32) -> Talvez<Resultado<u32, Texto>> {
+        se i % 2 == 1 {
+            se i == 42 {
+                Algum(Falha(Texto::de("pane")))
+            } senão {
+                Algum(Ok(33))
             }
-        } sinon {
-            Rien
+        } senão {
+            Nenhum
         }
     }
 
-    asynchrone fonction exemple() {
+    assíncrono função exemplo() {
     }
 
-    asynchrone fonction exemple2() {
-        exemple().attend;
+    assíncrono função exemplo2() {
+        exemplo().aguarde;
     }
 
-    fonction principale() {
-        soit mutable x = 31;
+    função principal() {
+        seja mutável x = 31;
 
-        selon x {
+        escolha x {
             42 => {
-                affiche!("omelette du fromage")
+                exiba!("pão de queijo")
             }
-            _ => affiche!("voila")
+            _ => exiba!("lá ele")
         }
 
-        pour i de 0..10 {
-            soit val = boucle {
-                arrête i;
+        para i em 0..10 {
+            seja val = laço {
+                pare i;
             };
 
-            tant que x < val {
+            enquanto x < val {
                 x += 1;
             }
 
-            x = si soit Quelque(resultat) = peut_etre(i) {
-                resultat.déballer()
-            } sinon {
+            x = se seja Algum(resultado) = pode_ser(i) {
+                resultado.desembrulhar()
+            } senão {
                 12
             };
         }
-
-        //secondaire();
+        //secundaria();
     }
 
-    #[légal(code_inaccessible)]
-    fonction secondaire() {
-        merde!("oh non"); // for the true French experience
-        calisse!("tabernacle"); // for friends speaking fr-ca
-        oups!("fetchez la vache"); // in SFW contexts
+    #[permitir(código_inalcançável)]
+    função secundaria() {
+        putz!("deu ruim"); // para a verdadeira experiência brasileira
+        oxe!("vixi mainha"); // para amigos falando pt-br regional
+        bah!("nossa senhora"); // outras gírias
     }
 }

@@ -1,5 +1,5 @@
 [workspace]
 members = [
-    "rouille_proc_macro",
+    "ferrugem_proc_macro",
     "examples"
 ]
