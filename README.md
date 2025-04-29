@@ -101,6 +101,7 @@ Please don't introduce swear words, though: we will not excuse your French.
 - Italian: [ruggine](https://github.com/DamianX/ruggine)
 - Russian: [Ржавый](https://github.com/Sanceilaks/rzhavchina)
 - Esperanto: [rustteksto](https://github.com/dscottboggs/rustteksto)
+- Toki Pona: [jaki kiwen](https://github.com/jgcodes2020/jaki-kiwen)
 - Hindi: [zung](https://github.com/rishit-khandelwal/zung)
 - Hungarian: [rozsda](https://github.com/jozsefsallai/rozsda)
 - Chinese: [xiu (锈)](https://github.com/lucifer1004/xiu)
