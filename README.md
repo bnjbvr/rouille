@@ -133,6 +133,7 @@ Please don't introduce swear words, though: we will not excuse your French.
 - Latin: [ferrugo](https://github.com/pianoman911/ferrugo)
 - Norwegian: [korrosjon](https://github.com/datagutt/korrosjon)
 - Estonian: [rooste](https://github.com/hanshs/rooste)
+- Kannada [tukku (ತುಕ್ಕು)](https://github.com/sanathNU/tukku.git)
 - All of the above: [unirust](https://github.com/charyan/unirust)
 
 ## un grand merci
