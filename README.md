@@ -101,6 +101,7 @@ Please don't introduce swear words, though: we will not excuse your French.
 - Italian: [ruggine](https://github.com/DamianX/ruggine)
 - Russian: [Ржавый](https://github.com/Sanceilaks/rzhavchina)
 - Esperanto: [rustteksto](https://github.com/dscottboggs/rustteksto)
+- Toki Pona: [jaki kiwen](https://github.com/jgcodes2020/jaki-kiwen)
 - Hindi: [zung](https://github.com/rishit-khandelwal/zung)
 - Hungarian: [rozsda](https://github.com/jozsefsallai/rozsda)
 - Chinese: [xiu (锈)](https://github.com/lucifer1004/xiu)
@@ -131,6 +132,8 @@ Please don't introduce swear words, though: we will not excuse your French.
 - Malagasy: [arafesina](https://github.com/luckasRanarison/arafesina)
 - Latin: [ferrugo](https://github.com/pianoman911/ferrugo)
 - Norwegian: [korrosjon](https://github.com/datagutt/korrosjon)
+- Estonian: [rooste](https://github.com/hanshs/rooste)
+- Kannada [tukku (ತುಕ್ಕು)](https://github.com/sanathNU/tukku.git)
 - Portuguese: [ferrugem](https://github.com/luisschwab/ferrugem)
 - All of the above: [unirust](https://github.com/charyan/unirust)
 
