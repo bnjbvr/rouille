@@ -134,6 +134,7 @@ Please don't introduce swear words, though: we will not excuse your French.
 - Norwegian: [korrosjon](https://github.com/datagutt/korrosjon)
 - Estonian: [rooste](https://github.com/hanshs/rooste)
 - Kannada [tukku (ತುಕ್ಕು)](https://github.com/sanathNU/tukku.git)
+- Sanskrit [jangam](https://github.com/ishantanu/jangam.git)
 - All of the above: [unirust](https://github.com/charyan/unirust)
 
 ## un grand merci
