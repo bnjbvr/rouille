@@ -135,6 +135,7 @@ Please don't introduce swear words, though: we will not excuse your French.
 - Estonian: [rooste](https://github.com/hanshs/rooste)
 - Kannada: [tukku (ತುಕ್ಕು)](https://github.com/sanathNU/tukku.git)
 - Nepali: [khiya (खिया)](https://github.com/sudanchapagain/khiya.git)
+- Sanskrit: [jangam](https://github.com/ishantanu/jangam.git)
 - All of the above: [unirust](https://github.com/charyan/unirust)
 
 ## un grand merci
